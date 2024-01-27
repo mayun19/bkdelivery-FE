@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavbarMenu from "./components/Navbar";
+import Footer from "./components/FooterBk";
+import Home from "./pages/Home";
+import Menus from "./pages/Menu";
+import DetailProduct from "./pages/DetailProduct";
+import Promo from "./pages/Promo";
+
+export const AppContext = createContext({});
 
 function App() {
+  const [cart, setCart] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  const handleAddToCart = (product) => {
+    const newCart = [...cart, product];
+    setCart((prev) => [...prev, product]);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
+
+  useEffect(() => {
+    const localCarts = localStorage.getItem("cart");
+    if (localCarts) {
+      setCart(JSON.parse(localCarts));
+    }
+  }, []);
+
+  const AppContextValue = {
+    cart,
+    handleAddToCart,
+    totalPrice,
+    setTotalPrice,
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={AppContextValue}>
+      <main className="h-full min-h-screen">
+        <Router>
+          <NavbarMenu />
+          <div className="container xl:mt-[76px] mt-[50px] w-screen">
+            <Routes>
+              <Route path="*" element={<Home />} />
+              <Route path="/menus" element={<Menus />} />
+              <Route path="/menus/:menuId" element={<Menus />} />
+              <Route path="/product/:productId" element={<DetailProduct />} />
+              <Route path="/news-v1" element={<Promo/>} />
+            </Routes>
+          </div>
+          <Footer />
+        </Router>
+      </main>
+    </AppContext.Provider>
   );
 }
 

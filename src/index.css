@@ -1,13 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "FlameBold";
+  src: local("FlameBold"), url("./fonts/flame/FlameBold.otf") format("trueType");
+}
+
+@font-face {
+  font-family: "FlameRegular";
+  src: local("FlameRegular"),
+    url("./fonts/flame/FlameRegular.otf") format("trueType");
+}
+
+@font-face {
+  font-family: "FlameSans";
+  src: local("FlameSans"), url("./fonts/flame/FlameSans.otf") format("trueType");
+}
+
+p {
+  word-break: break-word;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 100;
+  &::before {
+    font-size: 45px !important;
+  }
+
+  @media only screen and (max-width: 425px) {
+    &::before {
+      font-size: 20px !important;
+    }
+  }
+}
+
+.slick-prev {
+  left: 2% !important;
+}
+
+.slick-next {
+  right: 4% !important;
+}
+
+.slick-dots li button:before {
+  @apply w-[7px] h-[7px] !important;
+  color: #ed7801 !important;
+  font-size: 7px;
 }
