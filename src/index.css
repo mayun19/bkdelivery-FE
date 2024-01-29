@@ -67,3 +67,14 @@ p {
   color: #ed7801 !important;
   font-size: 7px;
 }
+
+.active-cart {
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-left: 20px solid rgb(250, 175, 24);
+  z-index: 100;
+}
+
+input[type=text]{
+  padding: 10px 15px !important;
+}

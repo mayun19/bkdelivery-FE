@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Menus from "./pages/Menu";
 import DetailProduct from "./pages/DetailProduct";
 import Promo from "./pages/Promo";
+import CartPreview from "./pages/cart/Preview";
 
 export const AppContext = createContext({});
 
@@ -34,7 +35,7 @@ function App() {
   };
   return (
     <AppContext.Provider value={AppContextValue}>
-      <main className="h-full min-h-screen">
+      <main className="h-full min-h-screen md:max-w-full">
         <Router>
           <NavbarMenu />
           <div className="container xl:mt-[76px] mt-[50px] w-screen">
@@ -43,7 +44,8 @@ function App() {
               <Route path="/menus" element={<Menus />} />
               <Route path="/menus/:menuId" element={<Menus />} />
               <Route path="/product/:productId" element={<DetailProduct />} />
-              <Route path="/news-v1" element={<Promo/>} />
+              <Route path="/news-v1" element={<Promo />} />
+              <Route path="/cart/preview" element={<CartPreview />} />
             </Routes>
           </div>
           <Footer />
