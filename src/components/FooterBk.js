@@ -34,7 +34,7 @@ function Footer() {
   return (
     <footer className="flex z-[100] items-center justify-center w-full h-full lg:h-[125px] bg-darkGrey text-whiteBk mt-[50px] py-5">
       <div
-        className="flex flex-col justify-center w-full md:w-[960px] sm:px-5
+        className="flex flex-col justify-center w-full md:w-[960px] px-5 lg:px-0
       ">
         <div className="font-FlameRegular lg:text-start text-center text-[25px] lg:text-xl text-white">
           BURGER KING® DELIVERY
