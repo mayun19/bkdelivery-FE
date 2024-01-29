@@ -17,7 +17,7 @@ const CardMenu = (props) => {
 
   return (
     <div
-      className={`rounded-[10px] bg-[#FFFF] md:p-5 p-[5px] shadow-[2px_2px_15px_-4px_#6b6b6b] cursor-pointer
+      className={`rounded-[10px] bg-whiteBk md:p-5 p-[5px] shadow-[2px_2px_15px_-4px_#6b6b6b] cursor-pointer
         ${isDetail ? "min-h-[280px]" : "min-h-[250px]"}
           `}
       onClick={handleClickCard}>
@@ -31,7 +31,7 @@ const CardMenu = (props) => {
 
       {!isDetail ? (
         <div className="flex justify-between gap-2 mt-[5px]">
-          <p className="font-FlameBold text-[#8B542F] break-words text-xl">
+          <p className="font-FlameBold text-brownBk break-words text-xl">
             {menu.name}
           </p>
           <div className="hidden md:flex">

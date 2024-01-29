@@ -1,13 +1,7 @@
-import promotions1 from "../assets/images/promtions/promtions1.jpg";
-import promotions2 from "../assets/images/promtions/promtions2.jpg";
-
 export const PRMOTIONS_DATA = [
   {
-    thumbnail: promotions1,
-    path: "",
-  },
-  {
-    thumbnail: promotions2,
+    thumbnail:
+      "https://bkdelivery.co.id/media/landscape_image/2023/1/18/mez28xqf8xytdfzprxx2an.jpg",
     path: "",
   },
 ];

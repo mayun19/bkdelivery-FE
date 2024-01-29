@@ -6,7 +6,7 @@ const ActiveProgress = (props) => {
     <div
       className={`${props.style} h-45 absolute flex cursor-pointer`}
       onClick={props.onClick}>
-      <div className="w-[80%] bg-[#faaf18] flex items-center justify-center text-[#8B542F] text-[10px] md:text-[22px]">
+      <div className="w-[80%] bg-[] flex items-center justify-center text-brownBk text-[10px] md:text-[22px]">
         {props.label}
       </div>
       <div className="active-cart w-[10%] h-0"></div>
@@ -19,9 +19,11 @@ const DefaultProgress = (props) => {
     <div
       className={`${
         props.isActive
-          ? "bg-[#faaf18] text-[#8B542F]"
+          ? "bg-yellowBk text-brownBk"
           : "bg-[#fcebd9] text-[#c5a997]"
-      } h-full flex items-center justify-center text-[10px] md:text-[22px] ${props.style}`}
+      } h-full flex items-center justify-center text-[10px] md:text-[22px] ${
+        props.style
+      }`}
       onClick={props.onClick}>
       {props.label}
     </div>

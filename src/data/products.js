@@ -16,7 +16,8 @@ export const PRODUCTS_BKAPP = [
     detail: "Cheese Whopper® JR + Fries Regular + Coke Regular",
     newPrice: 25000,
     oldPrice: 49545,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/11/2/fwvutetzjew4arsjqzq9td_product_list.jpg",
     menuId: "bk-app-exclusive",
   },
 ];
@@ -28,7 +29,8 @@ export const PRODUCTS_PROMO = [
     detail: "2pc Ayam Crispy",
     newPrice: 21818,
     oldPrice: 40000,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/12/1/fqmtrzjpkdbgxgjdxdkgva_product_list.jpg",
     menuId: "promo-hari-ini-6",
   },
 ];
@@ -41,7 +43,8 @@ export const PRODUCTS_CHEESE = [
       "Whopper® Jr Cheese Dunk + 1Pc Crispy Chicken Cheese Dunk + 1Pc Spicy Chicken + 2 Rice + Fries Regular + 2 Coke Regular + Coke Float Regular",
     newPrice: 109091,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/12/26/l5hnnrakv76bqwr2vjfeaq_product_list.jpg",
     menuId: "new-cheese-dunk-limited-time-offer",
   },
 ];
@@ -54,7 +57,8 @@ export const PRODUCTS_KING = [
       "Ice krim vanilla yang manis berpadu dengan saus coklat Nutella dan bertambur caramel crumble.",
     newPrice: 16818,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/12/20/dawjp7wtzvta5smwtahzvx_product_list.jpg",
     menuId: "new-king-fusion-nutella-limited-time-offer",
   },
 ];
@@ -66,7 +70,8 @@ export const PRODUCTS_HEINZ = [
     detail: "Mexican Whopper® + 1Pcs Crispy Chicken + Rice + Coke Medium",
     newPrice: 90909,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/10/19/k2djuj3u7xhfraukcjgfwo_product_list.jpg",
     menuId: "heinz-mexican-whopper",
   },
 ];
@@ -79,7 +84,8 @@ export const PRODUCTS_GOLD = [
       "Cheese Lava Angus Burger Ala Carte 100% Australian angus patty dengan saus mayonaise, fresh lettuce, mozza cheese patty dan juga melty American cheese dibalut dengan multigrain brioche bun yang lembut.",
     newPrice: 50000,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/3/1/w2hsbsvq5fquxff6ortu6m_product_list.jpg",
     menuId: "gold-collection-5",
   },
 ];
@@ -91,7 +97,8 @@ export const PRODUCTS_CHEESEW = [
     detail: "Spicy Cheese Whopper® + 1 pc Ayam + Nasi + Medium Drink",
     newPrice: 80909,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/12/21/yqh5nqrbgyjjakahsm2psc_product_list.jpg",
     menuId: "cheese-whopper-4",
   },
 ];
@@ -103,7 +110,8 @@ export const PRODUCTS_CHEESEBURGER = [
     detail: "Cheeseburger Supreme + 1 pc Ayam + Nasi + Medium Drink",
     newPrice: 61819,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/1/26/fndtvqcpaffjdchu5alujb_product_list.jpg",
     menuId: "cheeseburger-favoriter",
   },
 ];
@@ -115,7 +123,8 @@ export const PRODUCTS_KINGSCHICKEN = [
     detail: undefined,
     newPrice: 35000,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/12/21/vbdghfgjfnqtscgkcwbz35_product_list.jpg",
     menuId: "kings-chicken-rasa-baru",
   },
 ];
@@ -127,7 +136,8 @@ export const PRODUCTS_KIDSMEAL = [
     detail: "1 pc Ayam + Nasi + Ice Milo Regular",
     newPrice: 31818,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/3/20/s2upo4ykacwbinuc3sbwjs_product_list.jpg",
     menuId: "kids-meal",
   },
 ];
@@ -139,7 +149,8 @@ export const PRODUCTS_SIDEDESSERT = [
     detail: "Ice cream vanilla yang lembut dipadukan dengan Cookies crumble",
     newPrice: 12727,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/2/7/htwvxxeqrgcg54w4e3ert5_product_list.jpg",
     menuId: "side-dessert",
   },
 ];
@@ -151,7 +162,8 @@ export const PRODUCTS_BEVERAGES = [
     detail: "Coke Large",
     newPrice: 18182,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/3/20/b7hdgz6h6i8ijhxqn98aza_product_list.jpg",
     menuId: "beverages",
   },
 ];
@@ -159,11 +171,12 @@ export const PRODUCTS_BEVERAGES = [
 export const PRODUCTS_KINGDEALS = [
   {
     id: 13,
-    name: "King Deals Box Cheesy Beef Burger Regular",
+    name: "King Deals Box Cheesy Beef Burger",
     detail: "Cheesy Beef Burger + 1 pc Ayam Crispy + Nasi + Coke Regular",
     newPrice: 40909,
     oldPrice: null,
-    thumbnail: product0,
+    thumbnail:
+      "https://media-order.bkdelivery.co.id/thumb/product_photo/2023/5/22/mlhbqspwnlww7qpepj2iq5_product_list.jpg",
     menuId: "king-deals",
   },
 ];

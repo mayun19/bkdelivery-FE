@@ -32,7 +32,7 @@ const PageMenu = (props) => {
           <div className="font-['flameRegular'] xl:text-[13px] text-yellowBk block xl:tracking-tight">
             {props.title}
           </div>
-          <div className="font-['flameRegular'] xl:font-['flameBold'] xl:top-[3px] leading-[25px] relative text-[32px] xl:text-[25px] text-[#FFFF] xl:tracking-tight">
+          <div className="font-['flameRegular'] xl:font-['flameBold'] xl:top-[3px] leading-[25px] relative text-[32px] xl:text-[25px] text-whiteBk xl:tracking-tight">
             {props.subTitle}
           </div>
         </div>
@@ -50,7 +50,7 @@ function NavbarMenu() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[1000] h-max max-w-full rounded-none bg-[#2D2D2D] p-0">
+    <nav className="fixed top-0 left-0 right-0 z-[1000] h-max max-w-full rounded-none bg-darkGrey p-0">
       <div className="relative xl:container flex flex-row items-center justify-between xl:mx-auto xl:max-w-[960px] h-[50px] xl:h-[76px]">
         <div className="flex xl:hidden items-center">
           <button
@@ -94,7 +94,7 @@ function NavbarMenu() {
             ))}
           </div>
           <div className="flex h-auto xl:h-[76px]">
-            <div className="hidden font-['flameRegular'] text-xl text-[#FFFF] xl:flex pt-[23px] px-[10px] pb-[15px]">
+            <div className="hidden font-['flameRegular'] text-xl text-whiteBk xl:flex pt-[23px] px-[10px] pb-[15px]">
               LOGIN
             </div>
             <Link
@@ -102,11 +102,11 @@ function NavbarMenu() {
               className="no-underline xl:absolute relative xl:right-[-80px]">
               <div className="xl:py-6 xl:pr-4 xl:pl-[13px] p-[10px] xl:h-[76px] flex items-center justify-center relative bg-orange">
                 {cart.length > 0 && (
-                  <div className="absolute w-5 h-5 flex justify-center rounded-full top-0 lg:top-[15px] right-2.5 items-center text-sm bg-[#FF0000] text-[#FFFF]">
+                  <div className="absolute w-5 h-5 flex justify-center rounded-full top-0 lg:top-[15px] right-2.5 items-center text-sm bg-[#FF0000] text-whiteBk">
                     {cart.length}
                   </div>
                 )}
-                <MdShoppingCart color="#FFFFFF" size="30px" />
+                <MdShoppingCart color="FF" size="30px" />
               </div>
             </Link>
           </div>

@@ -7,7 +7,7 @@ const Button = (props) => {
         (variant === "secondary") | (variant === "ternary") ?  "inherit" : "bg-yellowBk"
       }) ${style}`}
       onClick={onClick}>
-      <div className="font-FlameRegular text-[#FFFFFF] text-base">
+      <div className="font-FlameRegular text-whiteBk text-base">
         {children}
       </div>
     </button>

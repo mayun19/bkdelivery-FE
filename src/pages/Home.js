@@ -11,7 +11,7 @@ const Home = () => {
     <div className="w-screen mx-auto pb-[150px]">
       <CarouselHome />
 
-      <div className="mx-auto w-full flex justify-center font-FlameBold text-[32px] text-[#8B542F] mt-8">
+      <div className="mx-auto w-full flex justify-center font-FlameBold text-[32px] text-brownBk mt-8">
         Our Menus
       </div>
 
