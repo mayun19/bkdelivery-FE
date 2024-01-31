@@ -16,7 +16,7 @@ module.exports = {
       whiteBk: "#FFFF",
       brownBk:"#8B542F",
       darkBrown: "#404040",
-      cBorder: "#0E0EE0",
+      border: "#E0E0E0",
     },
   },
   plugins: [],

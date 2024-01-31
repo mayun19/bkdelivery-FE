@@ -33,14 +33,14 @@ const CartPreview = () => {
         <div className="w-full rounded-[10px] bg-whiteBk shadow-[2px_2px_15px_-4px_#6b6b6b] flex mt-[30px]">
           <div className="container flex flex-col lg:flex-row gap-2">
             <div className="lg:w-[70%]">
-              <div className="lg:border-r-[1px] border-cBorder h-full">
+              <div className="lg:border-r-[1px] border-border h-full">
                 <div className="px-[30px] py-[25px]">
-                  <div className="container grid grid-cols-3 font-FlameRegular text-base border-b-[1px] border-cBorder text-darkBrown pb-1">
+                  <div className="container grid grid-cols-3 font-FlameRegular text-base border-b-[1px] border-border text-darkBrown pb-1">
                     <div>Menu Item</div>
                     <div className="text-center">Quantity</div>
                     <div className=" text-center">Subtotal</div>
                   </div>
-                  <div className="pb-4 border-b-[1px] border-cBorder text-darkBrown">
+                  <div className="pb-4 border-b-[1px] border-border text-darkBrown">
                     {cart.map((product, index) => (
                       <div
                         className="container grid grid-cols-3 gap-2 font-FlameSans text-[13px] text-darkBrown pt-2"
@@ -85,7 +85,7 @@ const CartPreview = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-[30%] border-t-[1px] border-cBorder ">
+            <div className="lg:w-[30%] border-t-[1px] border-border ">
               <div className="px-[5%] lg:px-[30px] py-[25px] h-full">
                 <div className="flex flex-row lg:flex-col items-center lg:items-start justify-between">
                   <div className="font-FlameSans font-medium text-[13px] text-darkBrown">

@@ -87,7 +87,7 @@ const DetailProduct = () => {
               </div>
               <div className="w-full md:w-[calc(75%)]">
                 <div className="flex flex-col md:flex-row w-full rounded-[10px] bg-whiteBk shadow-[2px_2px_15px_-4px_#6b6b6b]">
-                  <div className="w-full md:w-[63%] px-5 py-[35px] text-center md:border-r-[1px] border-cBorder">
+                  <div className="w-full md:w-[63%] px-5 py-[35px] text-center md:border-r-[1px] border-border">
                     <div className="font-FlameRegular text-3xl text-[#502314]">
                       {selectedProduct?.name}
                     </div>

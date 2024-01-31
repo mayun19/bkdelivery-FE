@@ -6,7 +6,7 @@ const ActiveProgress = (props) => {
     <div
       className={`${props.style} h-45 absolute flex cursor-pointer`}
       onClick={props.onClick}>
-      <div className="w-[80%] bg-[] flex items-center justify-center text-brownBk text-[10px] md:text-[22px]">
+      <div className="w-[80%] bg-yellowBk flex items-center justify-center text-brownBk text-[10px] md:text-[22px]">
         {props.label}
       </div>
       <div className="active-cart w-[10%] h-0"></div>
@@ -65,7 +65,7 @@ const Progress = (props) => {
         <ActiveProgress
           isActive={props.step === 1}
           label={"Delivery Info"}
-          style={`left-[30%] w-[45%]`}
+          style={`left-[30%] w-[45%] pl-[15%] md:pl-0`}
         />
       )}
     </div>
