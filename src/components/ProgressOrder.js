@@ -42,7 +42,7 @@ const Progress = (props) => {
       <DefaultProgress
         isActive={props.step === 1 || props.step === 2}
         label={"Delivery Info"}
-        style={`w-[35%]`}
+        style={`w-[35%] pl-[15%] md:pl-0`}
         onClick={() => {
           if (props.step === 1 || props.step === 2) {
             navigate("/cart/delivery");
@@ -65,7 +65,7 @@ const Progress = (props) => {
         <ActiveProgress
           isActive={props.step === 1}
           label={"Delivery Info"}
-          style={`left-[30%] w-[45%] pl-[15%] md:pl-0`}
+          style={`left-[30%] w-[45%]`}
         />
       )}
     </div>

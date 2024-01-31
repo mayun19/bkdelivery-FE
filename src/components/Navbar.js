@@ -102,7 +102,7 @@ function NavbarMenu() {
               className="no-underline xl:absolute relative xl:right-[-80px]">
               <div className="xl:py-6 xl:pr-4 xl:pl-[13px] p-[10px] xl:h-[76px] flex items-center justify-center relative bg-orange">
                 {cart.length > 0 && (
-                  <div className="absolute w-5 h-5 flex justify-center rounded-full top-0 lg:top-[15px] right-2.5 items-center text-sm bg-[#FF0000] text-whiteBk">
+                  <div className="absolute w-4 lg:w-5 h-4 lg:h-5 flex justify-center rounded-full top-1 lg:top-[15px] right-2.5 items-center text-xs lg:text-sm bg-[#FF0000] text-whiteBk">
                     {cart.length}
                   </div>
                 )}
